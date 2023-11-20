@@ -1,0 +1,43 @@
+.navbar {
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: larger;
+
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(252, 252, 252);
+    padding-top: 60px;
+}
+
+.form-container {
+    margin-top: 50px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+}
+
+.result-container {
+    margin-top: 20px;
+}
+
+.filled {
+    background-color: #8aff8a;
+
+}
+
+
+.empty {
+    background-color: #ff8a8a;
+
+}
+
+.title {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}

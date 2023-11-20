@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Formulário Interativo</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">TO-DO LIST</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Principal.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Game.html">Perguntas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Index.html">Começar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container form-container">
+        <div class="modal" tabindex="-1" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" id="Falha" class="close" data-bs-dismiss="modal"
+                            aria-label="Close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Necessario preencher todos os campos obrigatórios!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" id="myModalSucess">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" id="sucesso" class="close" data-bs-dismiss="modal"
+                            aria-label="Close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Cadastro realizado com sucesso!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form id="userForm">
+            <div class="form-container title">
+                <h2>LISTA DE TAREFAS</h2>
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label class="form-check-label" for="nome">*Nome da tarefa:</label>
+                <input placeholder="Digite aqui..." type="text" class="form-control nomes" id="nome" name="nome">
+            </div>
+
+            <div class="form-group">
+                <label class="form-check-label">*Prioridade:</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="Baixa" name="Prioridade" value="Baixa">
+                    <label class="form-check-label" for="Prioridade">Baixa</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="Media" name="Prioridade" value="Media">
+                    <label class="form-check-label" for="Prioridade">media</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="Alta" name="Prioridade" value="Alta">
+                    <label class="form-check-label" for="Prioridade">Alta</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="Urgente" name="Prioridade" value="Urgente">
+                    <label class="form-check-label" for="Prioridade">Urgente</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-check-label" for="desc">Descrição:</label>
+                <textarea placeholder="Digite aqui..." class="form-control" name="desc" id="desc" cols="30"
+                    rows="10"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="form-check-label">Horarios:</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="data1" name="data" value="00:00 - 06:00">
+                    <label class="form-check-label" for="data1">00:00 - 06:00</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="data2" name="data" value="06:00 - 12:00">
+                    <label class="form-check-label" for="data2">06:00 - 12:00</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="data3" name="data" value="12:00 - 18:00">
+                    <label class="form-check-label" for="data3">12:00 - 18:00</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="data4" name="data" value="18:00 - 00:00">
+                    <label class="form-check-label" for="data4">18:00 - 00:00</label>
+                </div>
+            </div>
+
+            <button type="submit" id="salvar" class="btn btn-primary submit-btn">Enviar</button>
+            <div class="result-container" id="resultContainer"></div>
+        </form>
+    </div>
+    <script src="../JS/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
